@@ -2,7 +2,6 @@ import jwt from "jsonwebtoken";
 export const authentication = (req, res, next) => {
   try {
     const token = req.headers.authorization;
-    console.log("token", token);
     if (token) {
       var decoded = jwt.verify(
         req.headers.authorization,
@@ -19,7 +18,6 @@ export const authentication = (req, res, next) => {
       });
     }
   } catch (err) {
-    console.log("token-err : ", err);
     res.status(200).json({
       isTokenExp: true,
       isTokenNotProvided: false,

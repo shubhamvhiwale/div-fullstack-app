@@ -14,7 +14,6 @@ interface ProductItem {
 }
 const Products = () => {
   const { products, isLoading, handleRouter } = useProducts();
-  console.log("products : ", products);
 
   return (
     <>

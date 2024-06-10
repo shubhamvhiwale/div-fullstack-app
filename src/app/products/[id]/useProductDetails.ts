@@ -22,7 +22,6 @@ const useProducts = () => {
       setIsLoading(true);
       const id = pathname.split("/")[2];
       const result = await ProductDetails(id);
-      console.log("result : ", result);
 
       if (result?.response) {
         setProduct(result?.response);

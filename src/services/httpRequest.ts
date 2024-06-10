@@ -15,7 +15,6 @@ export const RequestAPI = async (
   if (cookieRaw) {
     cookie = JSON.parse(cookieRaw);
   }
-  console.log("cookie-RequestAPI : ", cookie);
 
   const headers = new Headers();
   if (!(options.body instanceof FormData)) {

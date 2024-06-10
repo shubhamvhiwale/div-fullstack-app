@@ -22,7 +22,6 @@ export const users = {
 
   userLogin: async (data, cb) => {
     try {
-      console.log("UserLoginData : ", data);
       const result = await user.findOne({ username: data.username });
       if (result) {
         const compairHashPassword = await hash.compair(

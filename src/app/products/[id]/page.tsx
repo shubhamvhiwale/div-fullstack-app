@@ -5,7 +5,6 @@ import useProductDetails from "./useProductDetails";
 
 const ProductDetails = () => {
   const { product, isLoading } = useProductDetails();
-  console.log("product : ", product);
 
   return (
     <div className="w-full h-[100vh] flex justify-center items-center bg-white">
